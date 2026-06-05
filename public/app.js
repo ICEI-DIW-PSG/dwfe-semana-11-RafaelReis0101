@@ -257,7 +257,7 @@ function renderDetalhes() {
   document.title = "STEAMing Games | " + produto.nome;
 
   var estoqueClass = produto.emEstoque ? "text-success" : "text-danger";
-  var estoqueTxt   = produto.emEstoque ? "✔ Em estoque" : "✘ Fora de estoque";
+  var estoqueTxt   = produto.emEstoque ? "Em estoque" : "Fora de estoque";
   var badgeClass   = produto.emEstoque ? "bg-success" : "bg-danger";
 
   container.innerHTML = `
