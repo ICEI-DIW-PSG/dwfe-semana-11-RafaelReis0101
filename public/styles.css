@@ -1,0 +1,119 @@
+:root {
+  --steam-dark:    #1b2838;
+  --steam-mid:     #2a475e;
+  --steam-card:    #16202d;
+  --steam-nav:     #171a21;
+  --steam-text:    #c6d4df;
+  --steam-accent:  #66c0f4;
+  --steam-yellow:  #ffb01d;
+}
+
+body {
+  background-color: var(--steam-dark);
+  color: var(--steam-text);
+}
+
+.navbar-steam {
+  background-color: var(--steam-nav);
+  border-bottom: 2px solid var(--steam-mid);
+}
+
+.navbar-brand {
+  color: var(--steam-accent) !important;
+  letter-spacing: 0.03em;
+}
+
+.form-control-steam,
+.form-control-steam.form-select {
+  background-color: var(--steam-card);
+  border: 1px solid var(--steam-mid);
+  color: var(--steam-text);
+}
+
+.form-control-steam:focus {
+  background-color: var(--steam-card);
+  border-color: var(--steam-accent);
+  color: var(--steam-text);
+  box-shadow: 0 0 0 0.2rem rgba(102, 192, 244, 0.25);
+}
+
+.form-control-steam option {
+  background-color: var(--steam-card);
+  color: var(--steam-text);
+}
+
+.game-card {
+  background-color: var(--steam-card);
+  border: 1px solid var(--steam-mid);
+  color: var(--steam-text);
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.game-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.highlight {
+  border: 2px solid var(--steam-yellow) !important;
+  box-shadow: 0 0 12px rgba(245, 197, 24, 0.4) !important;
+}
+
+.detalhe-img {
+  max-height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.detalhe-table th {
+  color: var(--steam-accent);
+}
+
+.detalhe-table td,
+.detalhe-table th {
+  background-color: transparent;
+  color: var(--steam-text);
+  border-color: var(--steam-mid);
+}
+
+.breadcrumb-item a {
+  color: var(--steam-accent);
+}
+
+.breadcrumb-item.active {
+  color: var(--steam-text);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--steam-text);
+}
+
+hr {
+  border-color: var(--steam-mid);
+}
+.footer-steam {
+  background-color: var(--steam-nav);
+  border-top: 1px solid var(--steam-mid);
+}
+
+
+@media (max-width: 576px) {
+  .game-img {
+    height: 180px;
+  }
+  .detalhe-img {
+    max-height: 260px;
+  }
+}
+
+.game-card .card-text {
+  color: var(--steam-text) !important;
+}
+
+.game-card .fs-5 {
+  color: var(--steam-text) !important;
+}
